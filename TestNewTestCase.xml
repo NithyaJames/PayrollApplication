@@ -1,0 +1,13 @@
+<suite name="PayrollApplication" parallel="tests" thread-count="2"> <!--crosbrowser test implementation-->
+
+	<test name="ChromeTest">
+		<listeners>			
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			
+		</classes>
+	</test>
+</suite>
