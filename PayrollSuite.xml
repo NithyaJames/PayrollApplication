@@ -4,13 +4,21 @@
 		<listeners>			
 			<listener class-name="utilities.ExtenetReport" />
 		</listeners>
+		<groups>
+			<run>
+				<exclude name="smoke"></exclude>
+				<include name="regression"></include>
+			</run>
+		</groups>
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.HomePageTest"></class>
+			<class name="testCase.ClientsPageTest"></class>
 			
 		</classes>
 	</test>
-	<test name="FirefoxTest">
+	<!--<test name="FirefoxTest">
 		<listeners>			
 			<listener class-name="utilities.ExtenetReport" />
 		</listeners>
@@ -19,5 +27,5 @@
 			<class name="testCase.LoginPageTest"></class>
 			
 		</classes>
-	</test>
+	</test>-->
 </suite>

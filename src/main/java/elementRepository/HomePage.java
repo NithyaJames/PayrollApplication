@@ -23,10 +23,10 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);// with page factory
 	}
-	@FindBy(xpath="//div[@class='col-sm-6 page-title']//h1")
+	@FindBy(xpath="/html/body/header/div[3]/div/div/div[1]/h1")
 	WebElement payrollApplication;
 	//clients elements
-	@FindBy(xpath="/html/body/header/div[2]/div/div/nav/div/div[2]/ul/li[3]/a")
+	@FindBy(xpath="//ul[@id=\"w3\"]/li[3]/a")
 	WebElement clients;
 	@FindBy(xpath="//a[text()='Create Client']")
 	WebElement createClients;
@@ -52,20 +52,25 @@ public class HomePage {
 	public void createClientsClick() {
 		createClients.click();	
 	}
-	public void workersClick() {
-		workers.click();	
+	public boolean workersClick() {
+		workers.click();
+		return workers.isEnabled();
 	}
-	public void deductionClick() {
-		deduction.click();	
+	public boolean deductionClick() {
+		deduction.click();
+		return deduction.isEnabled();
 	}
-	public void timeSheetClick() {
-		timeSheet.click();	
+	public boolean timeSheetClick() {
+		timeSheet.click();
+		return timeSheet.isEnabled();
 	}
-	public void paySlipClick() {
-		payslip.click();	
+	public boolean paySlipClick() {
+		payslip.click();
+		return payslip.isEnabled();
 	}
-	public void invoiceClick() {
-		invoice.click();	
+	public boolean invoiceClick() {
+		invoice.click();
+		return invoice.isEnabled();
 	}
 	
 

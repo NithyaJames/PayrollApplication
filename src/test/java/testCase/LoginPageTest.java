@@ -1,6 +1,7 @@
 package testCase;
 
 import java.io.IOException;
+
 import java.time.Duration;
 
 import org.testng.Assert;
@@ -8,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
 import utilities.ExcelUtilities;
@@ -18,9 +20,9 @@ public class LoginPageTest extends BaseClass {
 	ExcelUtilities eu;
 	@DataProvider(name = "login-data-provider")
 	public Object[][] dpMethod() {
-		return new Object[][] { { "Carol", "Admin" },{ "Admin", "1q2w3e4" },{ "Admin", "12345" }};
+		return new Object[][] { { "Carol", "Admin" },{ "Admin", "1q2w3e4r" },{ "Admin", "12345" }};
 	}
-  @Test(priority=1)
+  @Test(priority=1,groups="regression")
   public void verifyLoginWithValidDetails() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
@@ -29,11 +31,11 @@ public class LoginPageTest extends BaseClass {
 	  lp.sendPassword(eu.readStringData(1, 1));
 	  lp.loginButtonClick();
 	  String expected="PAYROLL APPLICATION";
-	  //String actual=hp.homePageLoginCheck();
-		 //System.out.println(actual);
-	  //Assert.assertEquals(actual, expected, ":: PAYROLL APPLICATION Not As Expected");
+	  String actual=hp.homePageLoginCheck();
+	  System.out.println(actual);
+	  Assert.assertEquals(actual, expected, Constants.lp_verifyLoginWithValidDetailsErrorMessage);
 	}
-  @Test(dataProvider = "login-data-provider")
+  @Test(dataProvider = "login-data-provider",groups="regression")
 	public void verifyLoginWithIncorrectCredentials(String name, String pass) {
 		lp = new LoginPage(driver);
 		lp.sendUserName(name);
@@ -41,8 +43,8 @@ public class LoginPageTest extends BaseClass {
 		lp.loginButtonClick();
 		String expected="Incorrect username or password.";
 		String actual=lp.wrongCredentialAlert();
-		//System.out.println(actual);
-		Assert.assertEquals(actual, expected, "::Alert Message Not As Expected");
+		System.out.println(actual);
+		Assert.assertEquals(actual, expected, Constants.lp_verifyLoginWithIncorrectCredentials);
 	}
   }
 
