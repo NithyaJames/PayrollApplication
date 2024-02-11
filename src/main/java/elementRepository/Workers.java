@@ -17,12 +17,12 @@ public class Workers {
 		PageFactory.initElements(driver, this);// with page factory FindBy
 	}
 	@FindBy(xpath = "//span[@class='glyphicon glyphicon-eye-open']")
-	WebElement view;
+	private WebElement view;
 	@FindBy(xpath="//div[3]/div/div/div[1]/h1") WebElement workerName;
 	
 	public String workersViewClick() {
 		view.click();
-		return gu.getElementText(workerName);
+		return workerName.getText();
 	}
 	
 	

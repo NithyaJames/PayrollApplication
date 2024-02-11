@@ -10,10 +10,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.GeneralUtilites;
+import utilities.WaitUtilities;
 
 public class ClientsPage {
 	WebDriver driver;
 	GeneralUtilites gu = new GeneralUtilites();
+	WaitUtilities wu = new WaitUtilities();
 
 	public ClientsPage(WebDriver driver) {
 		this.driver = driver;
@@ -71,7 +73,7 @@ public class ClientsPage {
 	@FindBy(xpath ="//button[text()='Reset']") WebElement reset;
 
 	public void clientSearch(String cleintName) {
-		gu.sendKeyFunction(clientSearch, cleintName);
+		clientSearch.sendKeys(cleintName);
 		searchButton.click();
 
 	}
@@ -98,10 +100,9 @@ public class ClientsPage {
 		
 	}
 	public boolean resetButtonClick(String cleintName) {
-		gu.sendKeyFunction(clientSearch, cleintName);
+		clientSearch.sendKeys(cleintName);
 		reset.click();
-		return gu.getElementText(clientSearch).isEmpty();
+		return clientSearch.getText().isEmpty();
 	}
 	
-
 }

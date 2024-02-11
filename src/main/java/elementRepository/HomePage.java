@@ -44,7 +44,7 @@ public class HomePage {
 
 	public String homePageLoginCheck()
 	{
-	return 	gu.getElementText(payrollApplication);
+	return 	payrollApplication.getText();
 	}
 	public void clientsClick() {
 		clients.click();	

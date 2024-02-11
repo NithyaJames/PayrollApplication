@@ -1,5 +1,7 @@
 package testCase;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,13 +21,13 @@ public class DeductionPageTest extends BaseClass {
 	ExcelUtilities eu;
 	GeneralUtilites gu;
   @Test(groups="regression")
-  public void verifyAddDeduction() throws InterruptedException {
+  public void verifyAddDeduction() throws InterruptedException, IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  cl=new ClientsPage(driver);
 	  dp=new DeductionPage(driver);
-	  lp.sendUserName("carol");
-	  lp.sendPassword("1q2w3e4r");
+	  lp.sendUserName(eu.readStringData(1, 0));
+	  lp.sendPassword(eu.readStringData(1, 1));
 	  lp.loginButtonClick();
 	  hp.deductionClick();
 	  String[] arr = dp.addDeduction();

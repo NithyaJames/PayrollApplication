@@ -1,7 +1,7 @@
 package testCase;
 
 import java.awt.AWTException;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
@@ -14,6 +14,7 @@ import elementRepository.LoginPage;
 import elementRepository.TimeSheetPage;
 import utilities.ExcelUtilities;
 import utilities.GeneralUtilites;
+import utilities.WaitUtilities;
 
 public class TimeSheetTest extends BaseClass {
 	LoginPage lp;
@@ -22,65 +23,47 @@ public class TimeSheetTest extends BaseClass {
 	ExcelUtilities eu;
 	TimeSheetPage ts;
 	GeneralUtilites gu;
+	WaitUtilities wu;
 
-	@Test(groups = "smoke")
-	public void verifyGeneratePlaySlipButton() throws InterruptedException {
+	@Test(groups = "regression")
+	public void verifyGeneratePlaySlipButton() throws InterruptedException, IOException {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		cl = new ClientsPage(driver);
 		ts = new TimeSheetPage(driver);
-		lp.sendUserName("carol");
-		lp.sendPassword("1q2w3e4r");
+		wu = new WaitUtilities();
+		lp.sendUserName(eu.readStringData(1, 0));
+		lp.sendPassword(eu.readStringData(1, 1));
 		lp.loginButtonClick();
 		hp.timeSheetClick();
-		ts.generatePlaySlipButton();
-		Thread.sleep(1000);
-		// gu.alertHandling(driver);
-		Alert alertConfirm = driver.switchTo().alert();
-		System.out.println(alertConfirm.getText());
-		alertConfirm.accept();
-		Thread.sleep(10000);
-		Alert alertSimple = driver.switchTo().alert();
-		String actual=alertSimple.getText();
+		String actual= ts.generatePlaySlipButton();
 		String expected="Payslip generated!!!";
-		alertSimple.accept();
-		Thread.sleep(1000);
 		Assert.assertEquals(actual, expected,Constants.tp_verifyGeneratePlaySlipButton);
 		
 	}
-	@Test(groups="smoke")
-	public void verifyGenerateInvoiceButton() throws InterruptedException {
+	@Test(groups="regression")
+	public void verifyGenerateInvoiceButton() throws InterruptedException, IOException {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		cl = new ClientsPage(driver);
 		ts = new TimeSheetPage(driver);
-		lp.sendUserName("carol");
-		lp.sendPassword("1q2w3e4r");
+		lp.sendUserName(eu.readStringData(1, 0));
+		lp.sendPassword(eu.readStringData(1, 1));
 		lp.loginButtonClick();
 		hp.timeSheetClick();
-		ts.generateInvoiceButton();
-		Thread.sleep(1000);
-		// gu.alertHandling(driver);
-		Alert alertConfirmInvoice = driver.switchTo().alert();
-		System.out.println(alertConfirmInvoice.getText());
-		alertConfirmInvoice.accept();
-		Thread.sleep(10000);
-		Alert alertSimpleInvoice = driver.switchTo().alert();
-		String actualInvoice=alertSimpleInvoice.getText();
+		String actualInvoice=ts.generateInvoiceButton();
 		String expectedInvoice="Invoice generated!!!";
-		alertSimpleInvoice.accept();
-		Thread.sleep(1000);
 		Assert.assertEquals(actualInvoice, expectedInvoice, Constants.tp_verifyGenerateInvoiceButton);
 		
 	}
 	@Test(groups="regression")
-	public void verifyUploadTimesheetFile() throws FileNotFoundException, InterruptedException, AWTException {
+	public void verifyUploadTimesheetFile() throws InterruptedException, AWTException, IOException {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		cl = new ClientsPage(driver);
 		ts = new TimeSheetPage(driver);
-		lp.sendUserName("carol");
-		lp.sendPassword("1q2w3e4r");
+		lp.sendUserName(eu.readStringData(1, 0));
+		lp.sendPassword(eu.readStringData(1, 1));
 		lp.loginButtonClick();
 		hp.timeSheetClick();
 		ts.createTimeSheetTab();
@@ -88,7 +71,6 @@ public class TimeSheetTest extends BaseClass {
 		Thread.sleep(2000);
 		String expected="CREATE TIMESHEET";
 		String actual=ts.createTimesheetPage();
-		System.out.println(actual);
 		Assert.assertEquals(actual, expected, Constants.tp_verifyUploadTimesheetFile);
 	}
 }

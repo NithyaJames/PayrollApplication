@@ -1,6 +1,10 @@
 <suite name="PayrollApplication" parallel="tests" thread-count="2"> <!--crosbrowser test implementation-->
 
 	<test name="ChromeTest">
+		<listeners>
+			<listener class-name="utilities.RetryListener" />	
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
 		<listeners>			
 			<listener class-name="utilities.ExtenetReport" />
 		</listeners>
@@ -15,17 +19,29 @@
 			<class name="testCase.LoginPageTest"></class>
 			<class name="testCase.HomePageTest"></class>
 			<class name="testCase.ClientsPageTest"></class>
+			<class name="testCase.WorkersTest"></class>
+			<class name="testCase.TimeSheetTest"></class>
+			<class name="testCase.DeductionPageTest"></class>
 			
 		</classes>
 	</test>
-	<!--<test name="FirefoxTest">
+	<test name="FirefoxTest">
+		<listeners>
+			<listener class-name="utilities.RetryListener" />	
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
 		<listeners>			
 			<listener class-name="utilities.ExtenetReport" />
 		</listeners>
 		<parameter name="browser" value="Firefox"></parameter>
 		<classes>
 			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.HomePageTest"></class>
+			<class name="testCase.ClientsPageTest"></class>
+			<class name="testCase.WorkersTest"></class>
+			<class name="testCase.TimeSheetTest"></class>
+			<class name="testCase.DeductionPageTest"></class>
 			
 		</classes>
-	</test>-->
+	</test>
 </suite>

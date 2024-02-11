@@ -22,33 +22,31 @@ public class ClientsPageTest extends BaseClass {
 		return new Object[] { "Nithya","Astar" ,"Sam" };
 	}
 	
-  @Test(dataProvider = "client-search-data-provider",groups="smoke")
+  @Test(dataProvider = "client-search-data-provider",groups="regression")
   public void verifyValidClientSeach(String clientName) throws IOException, InterruptedException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  cl=new ClientsPage(driver);
-	  lp.sendUserName("carol");
-	  lp.sendPassword("1q2w3e4r");
+	  lp.sendUserName(eu.readStringData(1, 0));
+	  lp.sendPassword(eu.readStringData(1, 1));
 	  lp.loginButtonClick();
-	  Thread.sleep(5000);
 	  cl.clientsClick();
-	  Thread.sleep(5000);
+	  Thread.sleep(1000);
 	  cl.clientSearch(clientName);
-	  Thread.sleep(5000);
+	  Thread.sleep(1000);
 	  String actual = cl.searchRowByName(clientName);
 	  String expected=clientName;
 	  Assert.assertTrue(actual.contains(expected),Constants.cp_verifyValidClientSeach);
 	  
   }
   @Test(dataProvider = "client-search-data-provider",groups="regression")
-  public void verifyResetfunctionality(String client) throws InterruptedException {
+  public void verifyResetfunctionality(String client) throws InterruptedException, IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  cl=new ClientsPage(driver);
-	  lp.sendUserName("carol");
-	  lp.sendPassword("1q2w3e4r");
+	  lp.sendUserName(eu.readStringData(1, 0));
+	  lp.sendPassword(eu.readStringData(1, 1));
 	  lp.loginButtonClick();
-	  Thread.sleep(1000);
 	  cl.clientsClick();
 	  boolean actual = cl.resetButtonClick(client);
 	  Assert.assertTrue(actual,Constants.cp_verifyResetfunctionality );

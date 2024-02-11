@@ -1,5 +1,7 @@
 package testCase;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,19 +19,17 @@ public class WorkersTest extends BaseClass {
 	Workers wk;
 	ExcelUtilities eu;
   @Test(groups="regression")
-  public void verifyWorkersView() {
+  public void verifyWorkersView() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
 	  cl=new ClientsPage(driver);
 	  wk=new Workers(driver);
-	  lp.sendUserName("carol");
-	  lp.sendPassword("1q2w3e4r");
+	  lp.sendUserName(eu.readStringData(1, 0));
+	  lp.sendPassword(eu.readStringData(1, 1));
 	  lp.loginButtonClick();
 	  hp.workersClick();
 	  String expected = wk.getTextOfWorkersTable(1,2);
-	  System.out.println(expected);
 	  String actual = wk.workersViewClick();
-	  System.out.println(actual);
 	  Assert.assertTrue(actual.equalsIgnoreCase(expected), Constants.wp_verifyWorkersView);
   }
 }

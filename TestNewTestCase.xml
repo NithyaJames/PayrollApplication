@@ -13,8 +13,21 @@
 		</groups>
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="testCase.ClientsPageTest"></class>
+			<class name="testCase.TimeSheetTest"></class>
 			
 		</classes>
 	</test>
+	<!-- <test name="FirefoxTest">
+		<listeners>
+			<listener class-name="utilities.RetryListener" />	
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<listeners>			
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="testCase.ClientsPageTest"></class>
+		</classes>
+	</test>-->
 </suite>

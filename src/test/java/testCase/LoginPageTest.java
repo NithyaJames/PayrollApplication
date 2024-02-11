@@ -32,7 +32,6 @@ public class LoginPageTest extends BaseClass {
 	  lp.loginButtonClick();
 	  String expected="PAYROLL APPLICATION";
 	  String actual=hp.homePageLoginCheck();
-	  System.out.println(actual);
 	  Assert.assertEquals(actual, expected, Constants.lp_verifyLoginWithValidDetailsErrorMessage);
 	}
   @Test(dataProvider = "login-data-provider",groups="regression")
@@ -43,7 +42,6 @@ public class LoginPageTest extends BaseClass {
 		lp.loginButtonClick();
 		String expected="Incorrect username or password.";
 		String actual=lp.wrongCredentialAlert();
-		System.out.println(actual);
 		Assert.assertEquals(actual, expected, Constants.lp_verifyLoginWithIncorrectCredentials);
 	}
   }

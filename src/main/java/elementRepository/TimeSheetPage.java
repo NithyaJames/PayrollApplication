@@ -14,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.GeneralUtilites;
+import utilities.WaitUtilities;
 
 public class TimeSheetPage {
 	WebDriver driver;
@@ -33,11 +34,23 @@ public class TimeSheetPage {
 	@FindBy(xpath = "//button[@class='btn btn-default btn-secondary fileinput-upload fileinput-upload-button']") WebElement uploadButton;
 	@FindBy(xpath = "//div[3]/div/div/div[1]/h1") WebElement createTimesheet;
 	
-	public void generatePlaySlipButton() {
+	public String generatePlaySlipButton() throws InterruptedException {
+		String alertText;
 		generatePlaySlipButton.click();
+		Thread.sleep(1000);
+		gu.confirmationAlert(driver);
+		Thread.sleep(10000);
+		alertText = gu.confirmationAlert(driver);
+		return alertText;
 	}
-	public void generateInvoiceButton() {
+	public String generateInvoiceButton() throws InterruptedException {
+		String alertText;
 		generateInvoiceButton.click();
+		Thread.sleep(1000);
+		gu.confirmationAlert(driver);
+		Thread.sleep(10000);
+		alertText = gu.confirmationAlert(driver);
+		return alertText;
 	}
 	public void createTimeSheetTab() {
 		createTimesheetTab.click();
@@ -45,22 +58,11 @@ public class TimeSheetPage {
 	public void uploadTimesheet() throws FileNotFoundException, InterruptedException, AWTException {
 		
 		browse.click();
-		StringSelection s1=new  StringSelection(System.getProperty("user.dir")+"\\src\\main\\resources\\TimesheetFile\\rose.jpg");	 
-	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s1, null);
-	    Robot robot = new Robot();    //upload using Robot class
-	     robot.delay(1000);
-	     robot.keyPress(KeyEvent.VK_CONTROL);
-	     robot.keyPress(KeyEvent.VK_V);
-	     robot.delay(250);
-	     robot.keyRelease(KeyEvent.VK_CONTROL);
-	     robot.keyRelease(KeyEvent.VK_V);
-	     robot.delay(250);
-	     robot.keyPress(KeyEvent.VK_ENTER);
-	     robot.keyRelease(KeyEvent.VK_ENTER);
-	     uploadButton.click();
+		gu.uploadFile();
+	    uploadButton.click();
 
 	}
 	public String createTimesheetPage() {
-		return gu.getElementText(createTimesheet);
+		return createTimesheet.getText();
 	}
 }

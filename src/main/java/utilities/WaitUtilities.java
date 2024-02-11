@@ -11,20 +11,20 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtilities {
-	public void explicitWait(WebDriver driver,WebElement element,String attr,String val)
+	public void explicitWait(WebDriver driver,WebElement element)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.attributeToBe(element,attr,val)); 
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(100));
+		wait.until(ExpectedConditions.visibilityOf(element)); 
 		wait.until(ExpectedConditions.alertIsPresent());
 		
 	}
 	
-	public void fluentWait(WebDriver driver,WebElement element,String attr,String val) {
+	public void fluentWait(WebDriver driver,WebElement element) {
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-	            .withTimeout(Duration.ofSeconds(30))
+	            .withTimeout(Duration.ofSeconds(100))
 	            .pollingEvery(Duration.ofSeconds(5))
 	            .ignoring(NoSuchElementException.class);
-		fluentWait.until(ExpectedConditions.attributeContains(element, attr, val));
+		fluentWait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 }

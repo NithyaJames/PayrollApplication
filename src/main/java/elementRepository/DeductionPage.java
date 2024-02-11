@@ -37,17 +37,16 @@ public class DeductionPage {
 	public String[] addDeduction() throws InterruptedException {
 		addDeductionTab.click();
 		deductionWorkerName.click();
-		gu.sendKeyFunction(inputSearch, "Den");
+		inputSearch.sendKeys("Den");
 		deductionWorkerList.click();
-		String actual = gu.getElementText(selectedWorkerName);
+		String actual = selectedWorkerName.getText();
 		gu.selectDropDownUsingIndex(deductionType, 1);
-		gu.sendKeyFunction(deductionAmount,"1000");
+		deductionAmount.sendKeys("1000");
 		deductionEffectiveDate.clear();
-		gu.sendKeyFunction(deductionEffectiveDate,"01-02-2024");
+		deductionEffectiveDate.sendKeys("01-02-2024");
 		deductionSaveButton.click();
 		Thread.sleep(5000);
-		//wu.fluentWait(driver, savedWorkerName, "cla","//div[3]/div/div/div[1]/h1]");
-		String expected = gu.getElementText(savedWorkerName);
+		String expected = savedWorkerName.getText();
 		String[] arr = {expected,actual};
 		return arr;
 
