@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-11T22:19:00 IST" name="PayrollApplication" finished-at="2024-02-11T22:21:12 IST" duration-ms="132415">
+    <groups>
+      <group name="regression">
+        <method signature="ClientsPageTest.verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" name="verifyResetfunctionality" class="testCase.ClientsPageTest"/>
+        <method signature="ClientsPageTest.verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" name="verifyValidClientSeach" class="testCase.ClientsPageTest"/>
+        <method signature="DeductionPageTest.verifyAddDeduction()[pri:0, instance:testCase.DeductionPageTest@3c46e67a]" name="verifyAddDeduction" class="testCase.DeductionPageTest"/>
+        <method signature="HomePageTest.verifyOnClickMenu()[pri:0, instance:testCase.HomePageTest@75d4a5c2]" name="verifyOnClickMenu" class="testCase.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" name="verifyLoginWithIncorrectCredentials" class="testCase.LoginPageTest"/>
+        <method signature="TimeSheetTest.verifyGenerateInvoiceButton()[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" name="verifyGenerateInvoiceButton" class="testCase.TimeSheetTest"/>
+        <method signature="TimeSheetTest.verifyGeneratePlaySlipButton()[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" name="verifyGeneratePlaySlipButton" class="testCase.TimeSheetTest"/>
+        <method signature="TimeSheetTest.verifyUploadTimesheetFile()[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" name="verifyUploadTimesheetFile" class="testCase.TimeSheetTest"/>
+        <method signature="WorkersTest.verifyWorkersView()[pri:0, instance:testCase.WorkersTest@408d971b]" name="verifyWorkersView" class="testCase.WorkersTest"/>
+        <method signature="LoginPageTest.verifyLoginWithValidDetails()[pri:1, instance:testCase.LoginPageTest@14cd1699]" name="verifyLoginWithValidDetails" class="testCase.LoginPageTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2024-02-11T22:19:00 IST" name="ChromeTest" finished-at="2024-02-11T22:21:12 IST" duration-ms="132415">
+      <class name="testCase.HomePageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.HomePageTest@75d4a5c2]" started-at="2024-02-11T22:20:00 IST" name="beforeMethod" finished-at="2024-02-11T22:20:02 IST" duration-ms="2686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyOnClickMenu()[pri:0, instance:testCase.HomePageTest@75d4a5c2]" started-at="2024-02-11T22:20:02 IST" name="verifyOnClickMenu" finished-at="2024-02-11T22:20:07 IST" duration-ms="5186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnClickMenu -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.HomePageTest@75d4a5c2]" started-at="2024-02-11T22:20:07 IST" name="afterMethode" finished-at="2024-02-11T22:20:08 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOnClickMenu status=SUCCESS method=HomePageTest.verifyOnClickMenu()[pri:0, instance:testCase.HomePageTest@75d4a5c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.HomePageTest -->
+      <class name="testCase.TimeSheetTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:19:14 IST" name="beforeMethod" finished-at="2024-02-11T22:19:16 IST" duration-ms="2748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyGenerateInvoiceButton()[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:19:16 IST" name="verifyGenerateInvoiceButton" finished-at="2024-02-11T22:19:30 IST" duration-ms="13932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGenerateInvoiceButton -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:19:30 IST" name="afterMethode" finished-at="2024-02-11T22:19:31 IST" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGenerateInvoiceButton status=SUCCESS method=TimeSheetTest.verifyGenerateInvoiceButton()[pri:0, instance:testCase.TimeSheetTest@6c6cb480] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:19:31 IST" name="beforeMethod" finished-at="2024-02-11T22:19:33 IST" duration-ms="2702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyGeneratePlaySlipButton()[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:19:33 IST" name="verifyGeneratePlaySlipButton" finished-at="2024-02-11T22:19:47 IST" duration-ms="13895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGeneratePlaySlipButton -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:19:47 IST" name="afterMethode" finished-at="2024-02-11T22:19:47 IST" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGeneratePlaySlipButton status=SUCCESS method=TimeSheetTest.verifyGeneratePlaySlipButton()[pri:0, instance:testCase.TimeSheetTest@6c6cb480] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:20:25 IST" name="beforeMethod" finished-at="2024-02-11T22:20:28 IST" duration-ms="2917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUploadTimesheetFile()[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:20:28 IST" name="verifyUploadTimesheetFile" finished-at="2024-02-11T22:20:35 IST" duration-ms="7666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUploadTimesheetFile -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.TimeSheetTest@6c6cb480]" started-at="2024-02-11T22:20:35 IST" name="afterMethode" finished-at="2024-02-11T22:20:36 IST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUploadTimesheetFile status=SUCCESS method=TimeSheetTest.verifyUploadTimesheetFile()[pri:0, instance:testCase.TimeSheetTest@6c6cb480] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.TimeSheetTest -->
+      <class name="testCase.ClientsPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:08 IST" name="beforeMethod" finished-at="2024-02-11T22:20:11 IST" duration-ms="2920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:11 IST" name="verifyResetfunctionality" data-provider="client-search-data-provider" finished-at="2024-02-11T22:20:13 IST" duration-ms="2794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nithya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetfunctionality -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:13 IST" name="afterMethode" finished-at="2024-02-11T22:20:13 IST" duration-ms="163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetfunctionality status=SUCCESS method=ClientsPageTest.verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:13 IST" name="beforeMethod" finished-at="2024-02-11T22:20:16 IST" duration-ms="2732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:16 IST" name="verifyResetfunctionality" data-provider="client-search-data-provider" finished-at="2024-02-11T22:20:19 IST" duration-ms="2783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Astar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetfunctionality -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:19 IST" name="afterMethode" finished-at="2024-02-11T22:20:19 IST" duration-ms="168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetfunctionality status=SUCCESS method=ClientsPageTest.verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:19 IST" name="beforeMethod" finished-at="2024-02-11T22:20:22 IST" duration-ms="2799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:22 IST" name="verifyResetfunctionality" data-provider="client-search-data-provider" finished-at="2024-02-11T22:20:25 IST" duration-ms="2775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetfunctionality -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:25 IST" name="afterMethode" finished-at="2024-02-11T22:20:25 IST" duration-ms="170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetfunctionality status=SUCCESS method=ClientsPageTest.verifyResetfunctionality(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:36 IST" name="beforeMethod" finished-at="2024-02-11T22:20:39 IST" duration-ms="2993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:39 IST" name="verifyValidClientSeach" data-provider="client-search-data-provider" finished-at="2024-02-11T22:20:44 IST" duration-ms="4862" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nithya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidClientSeach -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:44 IST" name="afterMethode" finished-at="2024-02-11T22:20:44 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidClientSeach status=SUCCESS method=ClientsPageTest.verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:44 IST" name="beforeMethod" finished-at="2024-02-11T22:20:47 IST" duration-ms="3125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:47 IST" name="verifyValidClientSeach" data-provider="client-search-data-provider" finished-at="2024-02-11T22:20:52 IST" duration-ms="4935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Astar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidClientSeach -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:52 IST" name="afterMethode" finished-at="2024-02-11T22:20:52 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidClientSeach status=SUCCESS method=ClientsPageTest.verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:52 IST" name="beforeMethod" finished-at="2024-02-11T22:20:55 IST" duration-ms="2840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:20:55 IST" name="verifyValidClientSeach" data-provider="client-search-data-provider" finished-at="2024-02-11T22:21:01 IST" duration-ms="6501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidClientSeach -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ClientsPageTest@557caf28]" started-at="2024-02-11T22:21:01 IST" name="afterMethode" finished-at="2024-02-11T22:21:01 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidClientSeach status=SUCCESS method=ClientsPageTest.verifyValidClientSeach(java.lang.String)[pri:0, instance:testCase.ClientsPageTest@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.ClientsPageTest -->
+      <class name="testCase.WorkersTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.WorkersTest@408d971b]" started-at="2024-02-11T22:21:01 IST" name="beforeMethod" finished-at="2024-02-11T22:21:04 IST" duration-ms="2665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyWorkersView()[pri:0, instance:testCase.WorkersTest@408d971b]" started-at="2024-02-11T22:21:04 IST" name="verifyWorkersView" finished-at="2024-02-11T22:21:07 IST" duration-ms="3154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkersView -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.WorkersTest@408d971b]" started-at="2024-02-11T22:21:07 IST" name="afterMethode" finished-at="2024-02-11T22:21:07 IST" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWorkersView status=SUCCESS method=WorkersTest.verifyWorkersView()[pri:0, instance:testCase.WorkersTest@408d971b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.WorkersTest -->
+      <class name="testCase.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:47 IST" name="beforeMethod" finished-at="2024-02-11T22:19:50 IST" duration-ms="2890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:50 IST" name="verifyLoginWithIncorrectCredentials" data-provider="login-data-provider" finished-at="2024-02-11T22:19:52 IST" duration-ms="1378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Carol]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithIncorrectCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:52 IST" name="afterMethode" finished-at="2024-02-11T22:19:52 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithIncorrectCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:52 IST" name="beforeMethod" finished-at="2024-02-11T22:19:55 IST" duration-ms="2968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:55 IST" name="verifyLoginWithIncorrectCredentials" data-provider="login-data-provider" finished-at="2024-02-11T22:19:56 IST" duration-ms="804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1q2w3e4r]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithIncorrectCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:56 IST" name="afterMethode" finished-at="2024-02-11T22:19:56 IST" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithIncorrectCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:56 IST" name="beforeMethod" finished-at="2024-02-11T22:19:59 IST" duration-ms="2762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:59 IST" name="verifyLoginWithIncorrectCredentials" data-provider="login-data-provider" finished-at="2024-02-11T22:19:59 IST" duration-ms="783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithIncorrectCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:19:59 IST" name="afterMethode" finished-at="2024-02-11T22:20:00 IST" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithIncorrectCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithIncorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:21:07 IST" name="beforeMethod" finished-at="2024-02-11T22:21:10 IST" duration-ms="2867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidDetails()[pri:1, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:21:10 IST" name="verifyLoginWithValidDetails" finished-at="2024-02-11T22:21:12 IST" duration-ms="1947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidDetails -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@14cd1699]" started-at="2024-02-11T22:21:12 IST" name="afterMethode" finished-at="2024-02-11T22:21:12 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidDetails status=SUCCESS method=LoginPageTest.verifyLoginWithValidDetails()[pri:1, instance:testCase.LoginPageTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LoginPageTest -->
+      <class name="testCase.DeductionPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.DeductionPageTest@3c46e67a]" started-at="2024-02-11T22:19:00 IST" name="beforeMethod" finished-at="2024-02-11T22:19:04 IST" duration-ms="3389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddDeduction()[pri:0, instance:testCase.DeductionPageTest@3c46e67a]" started-at="2024-02-11T22:19:04 IST" name="verifyAddDeduction" finished-at="2024-02-11T22:19:13 IST" duration-ms="9810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDeduction -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.DeductionPageTest@3c46e67a]" started-at="2024-02-11T22:19:13 IST" name="afterMethode" finished-at="2024-02-11T22:19:14 IST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddDeduction status=SUCCESS method=DeductionPageTest.verifyAddDeduction()[pri:0, instance:testCase.DeductionPageTest@3c46e67a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.DeductionPageTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- PayrollApplication -->
+</testng-results>

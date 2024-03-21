@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-PayrollApplication" class="navigator-link">
+              <span class="suite-name border-passed">PayrollApplication</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-PayrollApplication" class="navigator-link ">
+                    <span>C:\Users\Nisha James\eclipse-workspace\PayrollApplication\PayrollSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-PayrollApplication" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-PayrollApplication" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-PayrollApplication" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-PayrollApplication" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-PayrollApplication" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-PayrollApplication" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PayrollApplication" class="hide-methods passed suite-PayrollApplication"> (hide)</a> <!-- hide-methods passed suite-PayrollApplication -->
+                      <a href="#" panel-name="suite-PayrollApplication" class="show-methods passed suite-PayrollApplication"> (show)</a> <!-- show-methods passed suite-PayrollApplication -->
+                    </span>
+                    <div class="method-list-content passed suite-PayrollApplication">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.DeductionPageTest" class="method navigator-link" hash-for-method="verifyAddDeduction">verifyAddDeduction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.TimeSheetTest" class="method navigator-link" hash-for-method="verifyGenerateInvoiceButton">verifyGenerateInvoiceButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.TimeSheetTest" class="method navigator-link" hash-for-method="verifyGeneratePlaySlipButton">verifyGeneratePlaySlipButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithIncorrectCredentials(Carol, Admin)">verifyLoginWithIncorrectCredentials(Carol, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithIncorrectCredentials(Admin, 12345)">verifyLoginWithIncorrectCredentials(Admin, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithIncorrectCredentials(Admin, 1q2w3e4r)">verifyLoginWithIncorrectCredentials(Admin, 1q2w3e4r)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithValidDetails">verifyLoginWithValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.HomePageTest" class="method navigator-link" hash-for-method="verifyOnClickMenu">verifyOnClickMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.ClientsPageTest" class="method navigator-link" hash-for-method="verifyResetfunctionality(Sam)">verifyResetfunctionality(Sam)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.ClientsPageTest" class="method navigator-link" hash-for-method="verifyResetfunctionality(Nithya)">verifyResetfunctionality(Nithya)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.ClientsPageTest" class="method navigator-link" hash-for-method="verifyResetfunctionality(Astar)">verifyResetfunctionality(Astar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.TimeSheetTest" class="method navigator-link" hash-for-method="verifyUploadTimesheetFile">verifyUploadTimesheetFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.ClientsPageTest" class="method navigator-link" hash-for-method="verifyValidClientSeach(Astar)">verifyValidClientSeach(Astar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.ClientsPageTest" class="method navigator-link" hash-for-method="verifyValidClientSeach(Nithya)">verifyValidClientSeach(Nithya)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.ClientsPageTest" class="method navigator-link" hash-for-method="verifyValidClientSeach(Sam)">verifyValidClientSeach(Sam)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PayrollApplication" title="testCase.WorkersTest" class="method navigator-link" hash-for-method="verifyWorkersView">verifyWorkersView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PayrollApplication -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-PayrollApplication" class="panel PayrollApplication">
+          <div class="suite-PayrollApplication-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.ClientsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetfunctionality(Sam)">
+                  </a> <!-- verifyResetfunctionality(Sam) -->
+                  <span class="method-name">verifyResetfunctionality</span>
+                  <span class="parameters">(Sam)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetfunctionality(Nithya)">
+                  </a> <!-- verifyResetfunctionality(Nithya) -->
+                  <span class="method-name">verifyResetfunctionality</span>
+                  <span class="parameters">(Nithya)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetfunctionality(Astar)">
+                  </a> <!-- verifyResetfunctionality(Astar) -->
+                  <span class="method-name">verifyResetfunctionality</span>
+                  <span class="parameters">(Astar)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidClientSeach(Astar)">
+                  </a> <!-- verifyValidClientSeach(Astar) -->
+                  <span class="method-name">verifyValidClientSeach</span>
+                  <span class="parameters">(Astar)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidClientSeach(Nithya)">
+                  </a> <!-- verifyValidClientSeach(Nithya) -->
+                  <span class="method-name">verifyValidClientSeach</span>
+                  <span class="parameters">(Nithya)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidClientSeach(Sam)">
+                  </a> <!-- verifyValidClientSeach(Sam) -->
+                  <span class="method-name">verifyValidClientSeach</span>
+                  <span class="parameters">(Sam)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PayrollApplication-class-passed -->
+          <div class="suite-PayrollApplication-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.DeductionPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDeduction">
+                  </a> <!-- verifyAddDeduction -->
+                  <span class="method-name">verifyAddDeduction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PayrollApplication-class-passed -->
+          <div class="suite-PayrollApplication-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.WorkersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWorkersView">
+                  </a> <!-- verifyWorkersView -->
+                  <span class="method-name">verifyWorkersView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PayrollApplication-class-passed -->
+          <div class="suite-PayrollApplication-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOnClickMenu">
+                  </a> <!-- verifyOnClickMenu -->
+                  <span class="method-name">verifyOnClickMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PayrollApplication-class-passed -->
+          <div class="suite-PayrollApplication-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.TimeSheetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGenerateInvoiceButton">
+                  </a> <!-- verifyGenerateInvoiceButton -->
+                  <span class="method-name">verifyGenerateInvoiceButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGeneratePlaySlipButton">
+                  </a> <!-- verifyGeneratePlaySlipButton -->
+                  <span class="method-name">verifyGeneratePlaySlipButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUploadTimesheetFile">
+                  </a> <!-- verifyUploadTimesheetFile -->
+                  <span class="method-name">verifyUploadTimesheetFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PayrollApplication-class-passed -->
+          <div class="suite-PayrollApplication-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithIncorrectCredentials(Carol, Admin)">
+                  </a> <!-- verifyLoginWithIncorrectCredentials(Carol, Admin) -->
+                  <span class="method-name">verifyLoginWithIncorrectCredentials</span>
+                  <span class="parameters">(Carol,Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithIncorrectCredentials(Admin, 12345)">
+                  </a> <!-- verifyLoginWithIncorrectCredentials(Admin, 12345) -->
+                  <span class="method-name">verifyLoginWithIncorrectCredentials</span>
+                  <span class="parameters">(Admin,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithIncorrectCredentials(Admin, 1q2w3e4r)">
+                  </a> <!-- verifyLoginWithIncorrectCredentials(Admin, 1q2w3e4r) -->
+                  <span class="method-name">verifyLoginWithIncorrectCredentials</span>
+                  <span class="parameters">(Admin,1q2w3e4r)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidDetails">
+                  </a> <!-- verifyLoginWithValidDetails -->
+                  <span class="method-name">verifyLoginWithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PayrollApplication-class-passed -->
+        </div> <!-- panel PayrollApplication -->
+        <div panel-name="test-xml-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nisha James\eclipse-workspace\PayrollApplication\PayrollSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;PayrollApplication&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtenetReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+        &lt;exclude name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCase.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;testCase.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;testCase.ClientsPageTest&quot;/&gt;
+      &lt;class name=&quot;testCase.WorkersTest&quot;/&gt;
+      &lt;class name=&quot;testCase.TimeSheetTest&quot;/&gt;
+      &lt;class name=&quot;testCase.DeductionPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- PayrollApplication --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PayrollApplication</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PayrollApplication</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddDeduction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyGenerateInvoiceButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyGeneratePlaySlipButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithIncorrectCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithValidDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOnClickMenu</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyResetfunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUploadTimesheetFile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyValidClientSeach</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWorkersView</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PayrollApplication</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PayrollApplication');
+function tableData_PayrollApplication() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyGenerateInvoiceButton')
+data.setCell(0, 2, 'testCase.TimeSheetTest')
+data.setCell(0, 3, 13932);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyGeneratePlaySlipButton')
+data.setCell(1, 2, 'testCase.TimeSheetTest')
+data.setCell(1, 3, 13895);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAddDeduction')
+data.setCell(2, 2, 'testCase.DeductionPageTest')
+data.setCell(2, 3, 9810);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUploadTimesheetFile')
+data.setCell(3, 2, 'testCase.TimeSheetTest')
+data.setCell(3, 3, 7666);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyValidClientSeach')
+data.setCell(4, 2, 'testCase.ClientsPageTest')
+data.setCell(4, 3, 6501);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyOnClickMenu')
+data.setCell(5, 2, 'testCase.HomePageTest')
+data.setCell(5, 3, 5186);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyValidClientSeach')
+data.setCell(6, 2, 'testCase.ClientsPageTest')
+data.setCell(6, 3, 4935);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyValidClientSeach')
+data.setCell(7, 2, 'testCase.ClientsPageTest')
+data.setCell(7, 3, 4862);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyWorkersView')
+data.setCell(8, 2, 'testCase.WorkersTest')
+data.setCell(8, 3, 3154);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyResetfunctionality')
+data.setCell(9, 2, 'testCase.ClientsPageTest')
+data.setCell(9, 3, 2794);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyResetfunctionality')
+data.setCell(10, 2, 'testCase.ClientsPageTest')
+data.setCell(10, 3, 2783);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyResetfunctionality')
+data.setCell(11, 2, 'testCase.ClientsPageTest')
+data.setCell(11, 3, 2775);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyLoginWithValidDetails')
+data.setCell(12, 2, 'testCase.LoginPageTest')
+data.setCell(12, 3, 1947);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLoginWithIncorrectCredentials')
+data.setCell(13, 2, 'testCase.LoginPageTest')
+data.setCell(13, 3, 1378);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyLoginWithIncorrectCredentials')
+data.setCell(14, 2, 'testCase.LoginPageTest')
+data.setCell(14, 3, 804);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyLoginWithIncorrectCredentials')
+data.setCell(15, 2, 'testCase.LoginPageTest')
+data.setCell(15, 3, 783);
+window.suiteTableData['PayrollApplication']= { tableData: data, tableDiv: 'times-div-PayrollApplication'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-PayrollApplication">
+              </div> <!-- times-div-PayrollApplication -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PayrollApplication</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PayrollApplication" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.DeductionPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDeduction</span>
+                <span class="method-start">3390 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyAddDeduction status=SUCCESS method=DeductionPageTest.verifyAddDeduction()[pri...)</span>
+                <span class="method-start">13211 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.TimeSheetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">13434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGenerateInvoiceButton</span>
+                <span class="method-start">16182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyGenerateInvoiceButton status=SUCCESS method=TimeSheetTest.verifyGenerateInvoi...)</span>
+                <span class="method-start">30117 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">30345 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGeneratePlaySlipButton</span>
+                <span class="method-start">33047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyGeneratePlaySlipButton status=SUCCESS method=TimeSheetTest.verifyGeneratePlay...)</span>
+                <span class="method-start">46951 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">47196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithIncorrectCredentials(Carol, Admin)</span>
+                <span class="method-start">50086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyLoginWithIncorrectCredentials status=SUCCESS method=LoginPageTest.verifyLogin...)</span>
+                <span class="method-start">51479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">51659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithIncorrectCredentials(Admin, 1q2w3e4r)</span>
+                <span class="method-start">54628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyLoginWithIncorrectCredentials status=SUCCESS method=LoginPageTest.verifyLogin...)</span>
+                <span class="method-start">55433 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">55581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithIncorrectCredentials(Admin, 12345)</span>
+                <span class="method-start">58343 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyLoginWithIncorrectCredentials status=SUCCESS method=LoginPageTest.verifyLogin...)</span>
+                <span class="method-start">59127 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">59289 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOnClickMenu</span>
+                <span class="method-start">61975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyOnClickMenu status=SUCCESS method=HomePageTest.verifyOnClickMenu()[pri:0, ins...)</span>
+                <span class="method-start">67162 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.ClientsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">67351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetfunctionality(Nithya)</span>
+                <span class="method-start">70271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyResetfunctionality status=SUCCESS method=ClientsPageTest.verifyResetfunctiona...)</span>
+                <span class="method-start">73066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">73230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetfunctionality(Astar)</span>
+                <span class="method-start">75962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyResetfunctionality status=SUCCESS method=ClientsPageTest.verifyResetfunctiona...)</span>
+                <span class="method-start">78746 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">78914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetfunctionality(Sam)</span>
+                <span class="method-start">81713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyResetfunctionality status=SUCCESS method=ClientsPageTest.verifyResetfunctiona...)</span>
+                <span class="method-start">84489 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.TimeSheetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">84659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUploadTimesheetFile</span>
+                <span class="method-start">87576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyUploadTimesheetFile status=SUCCESS method=TimeSheetTest.verifyUploadTimesheet...)</span>
+                <span class="method-start">95243 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.ClientsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">95418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidClientSeach(Nithya)</span>
+                <span class="method-start">98411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyValidClientSeach status=SUCCESS method=ClientsPageTest.verifyValidClientSeach...)</span>
+                <span class="method-start">103274 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">103430 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidClientSeach(Astar)</span>
+                <span class="method-start">106555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyValidClientSeach status=SUCCESS method=ClientsPageTest.verifyValidClientSeach...)</span>
+                <span class="method-start">111491 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">111684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidClientSeach(Sam)</span>
+                <span class="method-start">114524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyValidClientSeach status=SUCCESS method=ClientsPageTest.verifyValidClientSeach...)</span>
+                <span class="method-start">121027 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.WorkersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">121207 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWorkersView</span>
+                <span class="method-start">123872 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyWorkersView status=SUCCESS method=WorkersTest.verifyWorkersView()[pri:0, inst...)</span>
+                <span class="method-start">127027 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome)</span>
+                <span class="method-start">127184 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidDetails</span>
+                <span class="method-start">130051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=verifyLoginWithValidDetails status=SUCCESS method=LoginPageTest.verifyLoginWithVali...)</span>
+                <span class="method-start">131998 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
